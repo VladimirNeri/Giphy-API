@@ -21,7 +21,7 @@ $("#searchImage").on("click", function(event) {
     var inputfamousPeople = $("#searchInput").val().trim();
     if (inputfamousPeople.length > 0) {
         famousPeople.push(inputfamousPeople);
-    } else
+    }
     renderButtons();
 });
 
