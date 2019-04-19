@@ -1,6 +1,6 @@
 var famousPeople = ["Donald Trump", "Vladimir Putin", "Kim Jong Un", "Dennis Rodman", "Stormy Daniels"];
 
-// Source:  Activity 11
+// Source:  Activity 09
 function renderButtons() {
     
     $("#buttons-view").empty();
