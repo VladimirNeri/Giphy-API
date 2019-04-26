@@ -34,8 +34,14 @@ renderButtons();
 
 $("#buttons-view").on("click", "button",function() {
     var person = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        person + "&api_key=c0KM4Cps1B2bhjIlqg5kl8tT1EVEWKyg";
+    var baseURL = "https://api.giphy.com/v1/gifs/search?q=";
+    var apiKey = "api_key=c0KM4Cps1B2bhjIlqg5kl8tT1EVEWKyg";
+    var searchTerm = $(this).text();;
+    var limit = 10;
+
+    var queryURL = baseURL + searchTerm + "&" + "limit="+ limit + "&" + apiKey;
+
+    $("#contentArea").empty();
 
     $.ajax({
             url: queryURL,
