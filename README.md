@@ -1,4 +1,4 @@
-# GifTastic - https://vladimirneri.github.io/Giphy-API/
+## GifTastic - https://vladimirneri.github.io/Giphy-API/
 
 ### Overview
 
